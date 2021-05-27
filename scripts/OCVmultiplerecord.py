@@ -6,8 +6,11 @@ cap = cv2.VideoCapture(0)
 while True:
     ret, frame = cap.read()
     #documention for the width and height
+    #max value for width
     width = int(cap.get(3))
+    #max value for height
     height = int(cap.get(4))
+
 
     image = np.zeros(frame.shape, np.uint8)
     

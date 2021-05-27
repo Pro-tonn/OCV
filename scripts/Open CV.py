@@ -3,7 +3,7 @@ import cv2
 #color value -1 = Color ignore transparent background
 #Color value 0 =  Grayscale images
 #Color value 1 = Alpha value most likely with transparent backgrounds
-img = cv2.imread('assets\logo.jpg', -1)
+img = cv2.imread('scripts\logo.jpg', -1)
 img = cv2.resize(img, (400, 400))
 
 #rotational snippet
