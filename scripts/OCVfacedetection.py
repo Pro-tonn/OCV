@@ -3,10 +3,13 @@ import numpy as np
 
 cap = cv2.VideoCapture(0)
 
+#Using a pre-trained algorithm to find faces
 face_detect = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+
 while True:
     ret, frame = cap.read()
 
+    #
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_detect.detectMultiScale(gray, 1.3, 5)
     for (x, y, w, h) in faces:
