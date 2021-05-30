@@ -1,3 +1,5 @@
+#6 different screens should pop up because of the six different pre-trained algorithm being used
+
 import numpy as np
 import cv2
 

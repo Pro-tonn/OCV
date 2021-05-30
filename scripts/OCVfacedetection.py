@@ -9,7 +9,7 @@ face_detect = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontal
 while True:
     ret, frame = cap.read()
 
-    #
+    #Changing the comments to grayscale. Required for processing
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_detect.detectMultiScale(gray, 1.3, 5)
     for (x, y, w, h) in faces:
