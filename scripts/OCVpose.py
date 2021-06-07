@@ -30,4 +30,4 @@ with mp_pose.Pose(
     cv2.imshow('MediaPipe Pose', image)
     if cv2.waitKey(1)  == ord("c"):
       break
-cap.release()
+cap.release() 
