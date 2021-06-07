@@ -37,6 +37,6 @@ with mp_face_mesh.FaceMesh(
             landmark_drawing_spec=drawing_spec,
             connection_drawing_spec=drawing_spec)
     cv2.imshow('MediaPipe FaceMesh', image)
-    if cv2.waitKey(5) == ord('c'):
+    if cv2.waitKey(1) == ord('c'):
       break
 cap.release()

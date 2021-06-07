@@ -1,3 +1,4 @@
+#library for Open computer vision
 import cv2
 
 #color value -1 = Color ignore transparent background
